@@ -2,11 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>что то тут</title>
+    <title>Milan</title>
 </head>
 <body>
-и тут что то
-{{ numbers }}
-{{ letters}}
+<style>
+    .dish { color: white;}
+    .dishes{margin-top:90px;
+    margin-left:100px;}
+</style>
+
+{% include 'Header.html' %}
+<div class="dishes">
+    {% for dish in dishes %}
+    <div class="dish">
+        <h2>Название блюда: {{ dish.title }}</h2>
+        <p>Тип блюда: {{ dish.dish_type }}</p>
+        <p>Описание:{{ dish.description }}</p>
+    </div>
+    {% endfor %}
+</div>
 </body>
 </html>

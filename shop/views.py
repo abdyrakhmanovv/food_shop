@@ -2,10 +2,10 @@
 #
 #
 # def about(request):
-#     return HttpResponse('Hi bro')
+#     return HttpResponse('Hi')
 #
 # def index(request):
-#     return HttpResponse('салам э брат!!!')
+#     return HttpResponse('салам !!!')
 
 from django.shortcuts import render
 def view_dishes(request):
